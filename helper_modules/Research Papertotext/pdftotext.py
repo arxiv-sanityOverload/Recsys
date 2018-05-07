@@ -51,7 +51,7 @@ def pdf_extract(dirs):
 pool = multiprocessing.Pool()
 if __name__ =='__main__':
     filenames = pdf_dir()
-    filenames = filenames[0:10]
+    filenames = filenames
     try:
         result = pool.map(pdf_extract, filenames)
         pool.close()
